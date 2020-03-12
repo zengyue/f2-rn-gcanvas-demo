@@ -1,0 +1,5 @@
+rootProject.name = 'GCanvas'
+include ':react-native-gcanvas'
+project(':react-native-gcanvas').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gcanvas/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
